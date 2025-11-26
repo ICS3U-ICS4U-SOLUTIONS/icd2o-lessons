@@ -36,7 +36,7 @@ while True:
     center_y = center_y + 1
     
     # slow down the loop with the clock
-    clock.tick(45)
+    clock.tick(450)
 
 #  Do the following exercises
 

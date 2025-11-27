@@ -33,4 +33,56 @@ while True:
         # show graphics on the screen
         display.flip()
     
+        center_x += 1
+        center_y += 1
+        
+        # let's slow it down using the clock
+        clock.tick(60)
+        
+    for i in range (0, 100):
+        # white background
+        gameDisplay.fill(Color('white'))
+        
+        # draw ball
+        draw.circle(gameDisplay, Color('red'), (center_x, center_y), 30)
+        
+        # show graphics on the screen
+        display.flip()
     
+        center_x -= 1
+        center_y += 1
+        
+        # let's slow it down using the clock
+        clock.tick(60)
+        
+    for i in range (0, 100):
+        # white background
+        gameDisplay.fill(Color('white'))
+        
+        # draw ball
+        draw.circle(gameDisplay, Color('blue'), (center_x, center_y), 30)
+        
+        # show graphics on the screen
+        display.flip()
+    
+        center_x -= 1
+        center_y -= 1
+        
+        # let's slow it down using the clock
+        clock.tick(60)
+        
+    for i in range (0, 100):
+        # white background
+        gameDisplay.fill(Color('white'))
+        
+        # draw ball
+        draw.circle(gameDisplay, Color('green'), (center_x, center_y), 30)
+        
+        # show graphics on the screen
+        display.flip()
+    
+        center_x += 1
+        center_y -= 1
+        
+        # let's slow it down using the clock
+        clock.tick(60)

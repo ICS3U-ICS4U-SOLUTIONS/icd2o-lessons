@@ -32,6 +32,30 @@ gameDisplay = display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
 while True:
     
+    # Does the user want to quit?  (x button on upper right)
+    for evt in pygame.event.get():
+        if evt.type == pygame.QUIT:
+            quit()
+            
+    # make ball respond to keyboard input
+    if evt.type == pygame.KEYDOWN:
+    
+        # check if down arrow key is pressed
+        if evt.key == pygame.K_DOWN:
+            dy = random.randint(2, 4)
+
+        # check if up arrow key is pressed    
+        elif evt.key == pygame.K_UP:
+            dy = -random.randint(2, 4)
+            
+        # check if left key is pressed
+        elif evt.key == pygame.K_LEFT:
+            dx = -random.randint(2, 4)
+        
+        # check if right key is pressed
+        elif evt.key == pygame.K_RIGHT:
+            dx = random.randint(2, 4)
+    
     # white background for gameDisplay
     gameDisplay.fill(Color('white'))
     

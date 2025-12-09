@@ -41,7 +41,7 @@ highestMark = 0
 lowestMark = 100
 done = "N"
 currentMark = 0
-markRange = 0
+markRange = 0 
 
 # Loop while user is still entering marks
 while done == "N" or done =="n":
